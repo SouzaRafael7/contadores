@@ -9,7 +9,7 @@ Validação de e-mail
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Autores](#autores)
 
-(vdi/cpf-contador.gif)
+![Site](vdi/cpf-contador.gif)
  
 ## Descrição
 O projeto do cardápio online foi iniciado na aula de programção web na Escola Marista Irmão Acácio com o educador Léo. No projeto, foi proposto um cardápio online podendo colocar no mínimo 10 itens de sua escolha, além de ter que fazer um html digno e um css estilizado. 
