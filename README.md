@@ -52,6 +52,8 @@ Validação de CPF
 * [Cardápio](#cardápio)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Autores](#autores)
+
+![Site](vdi/email-validador.gif)
  
 ## Descrição
 
