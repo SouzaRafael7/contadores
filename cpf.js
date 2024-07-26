@@ -18,7 +18,7 @@ document.getElementById('cpfForm').addEventListener('submit', function(event){
 );
  
 function validarCPF(cpf){
-    cpf = cpf.replace(/[^\d]+/g, ''); //Remove caracteres não numéricos
+    cpf = cpf.replace; //Remove caracteres não numéricos
  
     //Estrutura de decisão para verificar a quantidade de dígitos e se todos os digitos são iguais
     if(cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)){
