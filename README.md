@@ -8,38 +8,38 @@ site de validação de cpf e outro de email onde cada um tem seus códigos para 
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Autores](#autores)
 
-![Site](vdi/cpf-contador.gif)
-
 ## Cpf
 
 No site o usuário digita um cpf, o código analisa o cpf e logo abaixo deixa sua resposta se o cpf é valido ou invalido. 
+
+![Site](vdi/cpf-contador.gif)
 
 ## Código cpf
 
 O site analisa se o código tem algum erro, como por exemplo:
 
-**if(cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf))** 
+**if(cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf))**: 
 Ele analisa se todos os números são iguais.
 
-**function validarCPF(cpf)**
+**function validarCPF(cpf)**:
 Define a função validarCPF que recebe o número de CPF como parâmetro.
 
-**cpf = cpf.replace(/[^\d]+/g, '')**
+**cpf = cpf.replace(/[^\d]+/g, '')**:
 Remove todos os caracteres que não são dígitos do número de CPF.
 
-**if(validarCPF(cpf))**
+**if(validarCPF(cpf))**:
 Chama a função validarCPF passando o valor do CPF. Se a função retornar true, o CPF é válido e a mensagem é alterada para "O CPF é válido" com a cor verde.
 
-**else** 
+**else** :
 Se a função validarCPF retornar false, o CPF é inválido e a mensagem é alterada para "O CPF é inválido" com a cor vermelha.
 
-**const msg** = document.getElementById('message');: Obtém a referência ao elemento HTML com o ID 'message', que será usado para exibir a mensagem de validação.
+**const msg = document.getElementById('message')**: Obtém a referência ao elemento HTML com o ID 'message', que será usado para exibir a mensagem de validação.
 
-**const cpf** = document.getElementById('cpf').value;: Obtém o valor do campo de entrada com o ID 'cpf' e armazena em uma constante chamada 'cpf'.
+**const cpf = document.getElementById('cpf').value**: Obtém o valor do campo de entrada com o ID 'cpf' e armazena em uma constante chamada 'cpf'.
 
 **event.preventDefault()**: Essa linha impede o comportamento padrão do formulário, que seria recarregar a página. Isso é útil para realizar a validação antes de enviar os dados para um servidor, por exemplo.
 
-**document.getElementById('cpfForm').addEventListener('submit', ...)** Essa linha adiciona um ouvinte de eventos ao formulário com o ID 'cpfForm'. Isso significa que quando o formulário for enviado (clicando no botão "Enviar"), a função dentro do addEventListener será executada.
+**document.getElementById('cpfForm').addEventListener('submit', ...)** :Essa linha adiciona um ouvinte de eventos ao formulário com o ID 'cpfForm'. Isso significa que quando o formulário for enviado (clicando no botão "Enviar"), a função dentro do addEventListener será executada.
 
 **for(let i=1;i <= 9;i++)**: Este é um loop que itera de 1 a 9. A variável i será usada como índice para acessar os dígitos do CPF.
 
@@ -54,6 +54,7 @@ Neste site o usuário digita um email válido, o código verifica se o email est
 ![Site](vdi/email-validador.gif)
 
 ## Codigo Email
+
 **document.forms[0].email.value**: Acessa o valor do campo de email no primeiro formulário do documento.
 == "": Verifica se o campo de email está vazio.
 **indexOf('@') == -1**: Verifica se o caractere '@' não existe no endereço de email (indexOf retorna -1 se não encontrar).
